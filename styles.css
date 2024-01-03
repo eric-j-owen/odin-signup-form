@@ -1,7 +1,7 @@
 * {
-    border: 1px solid red;
     padding: 0;
     margin: 0;
+    font-size: 24px;
 }
 
 @font-face {
@@ -13,12 +13,51 @@
     --btn: #596D48;
     --input-border: #E5E7EB;
 }
+
 .container {
     display: flex;
     height: 100vh;
 }
+
 .content {
     flex-basis: 60vw;
+    padding:40px;
+}
+header {
+    padding-bottom: 40px;
+}
+
+header p {
+    padding-bottom: 40px;
+}
+
+form ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+form ul li {
+    max-width: 40%;
+    padding-right:20px;
+}
+
+form ul li label {
+    font-size: .75rem;
+}
+form button {
+    padding-bottom: 20px;
+}
+
+.signin {
+    display: flex;
+}
+
+.signin p,
+.signin button {
+    font-size: .75rem;
 }
 
 .bg {
