@@ -52,15 +52,28 @@ form ul{
 }
 
 form ul li {
-    flex-basis: 1rem;
+    display: flex;
+    flex-direction: column;
     padding: 0 20px;
+    
 }
 
 form ul li label {
     font-size: .6rem;
 }
 
+form ul li input {
+    border: 1px solid var(--input-border);
+    padding:2px;
+}
 
+form ul li input:focus{
+    box-shadow: 10px 11px 24px -12px rgba(179,173,179,1);
+}
+
+form ul li input:invalid {
+    border: 1px solid red;
+}
 
 form button {
     cursor: pointer;
