@@ -1,0 +1,43 @@
+* {
+    border: 1px solid red;
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('./assets/Norse-Bold.otf') format('opentype');
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.content {
+    flex-basis: 60vw;
+}
+
+.bg {
+    background-image: url("./assets/bgimage.jpg");
+    background-size: cover;
+    flex-basis: 40vw;
+}
+
+.logo {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+}
+.logo h1 {
+    font-family: 'Norse-Bold', sans-serif; /* Fallback to sans-serif if custom font fails to load */
+    color: white;
+    font-size: 4rem;
+}
+
